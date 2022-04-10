@@ -1,0 +1,30 @@
+<template>
+  <div class="app slds-p-around_x-large">
+    <h1 class="slds-text-heading_large">{title}</h1>
+    <h3>{version}</h3>
+		<p>{description}</p>
+
+    <lightning-button
+      label="Toggle Lightbulb"
+      title="Non-primary action"
+      onclick={handleToggle}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+
+    <lightning-button
+      data-set="isbroken"
+      label="Break Lightbulb"
+      title="Non-primary action"
+      onclick={handleSetState}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+
+    <lightning-button
+      data-set="unlit"
+      label="Fix Lightbulb"
+      title="Non-primary action"
+      onclick={handleSetState}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+  </div>
+</template>
